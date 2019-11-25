@@ -1,0 +1,100 @@
+:host {
+  display: flex;
+  flex: 1;
+}
+
+.mat-sidenav {
+  min-width: 270px;
+  max-width: 28%;
+}
+
+.has-border {
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.mat-list {
+  padding-top: 0;
+}
+
+.mat-list-item {
+  text-decoration: none;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+}
+
+.menu-button {
+  margin-right: 1rem;
+}
+.logo {
+  width: 100px;
+  img {
+    width: 100%;
+  }
+}
+.sidebar-header {
+  .sidebar-header_logo img {
+    max-width: 150px;
+  }
+  .slogan {
+    font-size: 11px;
+    color: #888;
+    margin: 5px 0;
+    font-weight: normal;
+  }
+}
+.header-options {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  height: 60px;
+  line-height: 60px;
+  vertical-align: top;
+}
+.header-options-custom {
+  line-height: 100px;
+}
+.sidebar-header-min .header-options {
+  line-height: 57px;
+}
+
+.header-infos {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  .logo-img {
+    margin-bottom: 10px;
+  }
+}
+.sidebar-header .sidebar-header_logo {
+  padding: 15px 20px;
+  display: block;
+}
+.sidebar-header_logo.left {
+  padding-bottom: 16px;
+}
+
+.links-hotels-and-car {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e3e3e3;
+  .link-flights {
+    background: #f7f7f7;
+    color: #4d9eeb;
+    min-width: 33%;
+    cursor: pointer;
+  }
+  .link-menu-section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 65px;
+    font-weight: 600;
+    color: #bdbdbd;
+  }
+}

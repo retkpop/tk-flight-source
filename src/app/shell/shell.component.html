@@ -1,0 +1,110 @@
+<div fxFlex>
+  <mat-sidenav-container fxFill>
+    <mat-sidenav #sidenav [mode]="'over'" [opened]="false" [disableClose]="false" ngClass.gt-sm="has-border">
+      <mat-toolbar color="primary">
+        <div class="logo">
+          <img class="logo-img" src="assets/images/logo-jaribu.png" alt="jaribu logo" />
+        </div>
+
+        <div fxFlex></div>
+      </mat-toolbar>
+      <nav>
+        <mat-list>
+          <mat-divider></mat-divider>
+          <a mat-list-item routerLink="/home" routerLinkActive="active" (click)="isMobile && sidenav.close()">
+            <span translate>Home</span>
+          </a>
+          <mat-divider></mat-divider>
+          <a mat-list-item routerLink="/about" routerLinkActive="active" (click)="isMobile && sidenav.close()">
+            <span translate>About</span>
+          </a>
+          <mat-divider></mat-divider>
+        </mat-list>
+      </nav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <!--      <mat-toolbar color="primary" class="mat-elevation-z6">-->
+      <!--        <button class="menu-button" mat-icon-button (click)="sidenav.toggle()">-->
+      <!--          <mat-icon>menu</mat-icon>-->
+      <!--        </button>-->
+      <!--        <span>{{ title }}</span>-->
+      <!--      </mat-toolbar>-->
+
+      <div class="main-page">
+        <div class="home-page">
+          <div class="row group-main">
+            <div class="col-md-3 item-col">
+              <div class="sidebar-header">
+                <div class="header-not-display-mobile header-home sidebar-header-min">
+                  <div class="header-infos">
+                    <div class="header-logo">
+                      <a routerLink="/home" class="sidebar-header_logo left " data-ember-action-6070="6070">
+                        <img class="logo-img" src="assets/images/logo-jaribu.png" alt="jaribu logo" />
+                        <h3 class="slogan">Book your flight tickets at the best price</h3>
+                      </a>
+                    </div>
+                    <div class="header-options  header-options-custom">
+                      <div class="header-currency">
+                        <div>
+                          <button mat-icon-button [matMenuTriggerFor]="userMenu" translate>
+                            <mat-icon>person</mat-icon>
+                          </button>
+                          <mat-menu #userMenu="matMenu">
+                            <mat-list>
+                              <mat-list-item>
+                                <span translate>Logged in as</span>&nbsp;<b>{{ username }}</b>
+                              </mat-list-item>
+                              <mat-divider></mat-divider>
+                            </mat-list>
+                            <button mat-menu-item (click)="logout()" translate>Logout</button>
+                          </mat-menu>
+                        </div>
+                      </div>
+                      <div class="header-lang">
+                        <div>
+                          <button mat-icon-button [matMenuTriggerFor]="languageMenu">
+                            <mat-icon>language</mat-icon>
+                          </button>
+                          <mat-menu #languageMenu="matMenu">
+                            <button mat-menu-item *ngFor="let language of languages" (click)="setLanguage(language)">
+                              {{ language }}
+                            </button>
+                          </mat-menu>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <mat-divider></mat-divider>
+                <div class="not-display-on-mobile">
+                  <div id="ember6203" class="ember-view">
+                    <div class="sidebar-user">
+                      <div class="sidebar-user_head clear">
+                        <div class="sidebar-user_thumb left">
+                          <mat-toolbar class="">
+                            <button class="menu-button" mat-icon-button (click)="sidenav.toggle()">
+                              <mat-icon>menu</mat-icon>
+                            </button>
+                            <span>Menu</span>
+                          </mat-toolbar>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <mat-divider></mat-divider>
+
+                <div class="links-hotels-and-car header-not-display-mobile">
+                  <div class="link-flights link-menu-section "><span class="link-flights-icon"></span> Flights</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9 item-col">
+              <router-outlet></router-outlet>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

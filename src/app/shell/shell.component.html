@@ -32,13 +32,13 @@
 
       <div class="main-page">
         <div class="home-page">
-          <div class="row group-main">
-            <div class="col-md-3 item-col">
+          <div class="group-main">
+            <div class="item-col-left">
               <div class="sidebar-header">
                 <div class="header-not-display-mobile header-home sidebar-header-min">
                   <div class="header-infos">
                     <div class="header-logo">
-                      <a routerLink="/home" class="sidebar-header_logo left " data-ember-action-6070="6070">
+                      <a routerLink="/home" class="sidebar-header_logo left">
                         <img class="logo-img" src="assets/images/logo-jaribu.png" alt="jaribu logo" />
                         <h3 class="slogan">Book your flight tickets at the best price</h3>
                       </a>
@@ -49,7 +49,7 @@
                           <button mat-icon-button [matMenuTriggerFor]="userMenu" translate>
                             <mat-icon>person</mat-icon>
                           </button>
-                          <mat-menu #userMenu="matMenu">
+                          <mat-menu #userMenu="matMenu" xPosition="before">
                             <mat-list>
                               <mat-list-item>
                                 <span translate>Logged in as</span>&nbsp;<b>{{ username }}</b>
@@ -65,7 +65,7 @@
                           <button mat-icon-button [matMenuTriggerFor]="languageMenu">
                             <mat-icon>language</mat-icon>
                           </button>
-                          <mat-menu #languageMenu="matMenu">
+                          <mat-menu #languageMenu="matMenu" xPosition="before">
                             <button mat-menu-item *ngFor="let language of languages" (click)="setLanguage(language)">
                               {{ language }}
                             </button>
@@ -96,10 +96,112 @@
 
                 <div class="links-hotels-and-car header-not-display-mobile">
                   <div class="link-flights link-menu-section "><span class="link-flights-icon"></span> Flights</div>
+                  <div class="select-type">
+                    <mat-radio-group aria-label="Select an option" class="select-option">
+                      <mat-radio-button value="1" class="item-sl">One way</mat-radio-button>
+                      <mat-radio-button value="2" class="item-sl">Routrip</mat-radio-button>
+                    </mat-radio-group>
+                  </div>
+                </div>
+              </div>
+              <div class="form-search">
+                <div class="form-search-container">
+                  <div class="location">
+                    <div class="form-group">
+                      <div class="icon-field">
+                        <mat-icon aria-hidden="false" aria-label="flight_takeoff" class="icon-flight"
+                          >flight_takeoff</mat-icon
+                        >
+                      </div>
+                      <mat-form-field class="input-field">
+                        <input matInput placeholder="From" />
+                      </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                      <div class="icon-field">
+                        <mat-icon aria-hidden="false" aria-label="flight_land" class="icon-flight"
+                          >flight_land</mat-icon
+                        >
+                      </div>
+                      <mat-form-field class="input-field">
+                        <input matInput placeholder="To" />
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div class="option-flight">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <mat-form-field>
+                            <input
+                              matInput
+                              [matDatepicker]="departureDate"
+                              (focus)="departureDate.open()"
+                              placeholder="Depart"
+                            />
+                            <mat-datepicker-toggle matSuffix [for]="departureDate"></mat-datepicker-toggle>
+                            <mat-datepicker #departureDate></mat-datepicker>
+                          </mat-form-field>
+                        </div>
+                        <div class="form-group">
+                          <mat-form-field>
+                            <input
+                              matInput
+                              [matDatepicker]="returnDate"
+                              (focus)="returnDate.open()"
+                              placeholder="Return"
+                            />
+                            <mat-datepicker-toggle matSuffix [for]="returnDate"></mat-datepicker-toggle>
+                            <mat-datepicker #returnDate></mat-datepicker>
+                          </mat-form-field>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <div class="passengers">
+                            <mat-form-field class="input-field">
+                              <input matInput [matMenuTriggerFor]="Passengers" placeholder="Passengers" />
+                            </mat-form-field>
+                            <mat-menu #Passengers="matMenu" xPosition="before">
+                              <mat-list>
+                                <mat-list-item>
+                                  <div class="name-passenger">
+                                    Adult(s)
+                                  </div>
+                                  <div class="select-feild">
+                                    <i class="fa fa-minus"></i>
+                                    - 4 +
+                                  </div>
+                                </mat-list-item>
+                                <mat-divider></mat-divider>
+                                <mat-list-item>
+                                  <div class="name-passenger">
+                                    Children
+                                  </div>
+                                  <div class="select-feild">
+                                    - 4 +
+                                  </div>
+                                </mat-list-item>
+                                <mat-divider></mat-divider>
+                                <mat-list-item>
+                                  <div class="name-passenger">
+                                    Infant(s)
+                                  </div>
+                                  <div class="select-feild">
+                                    - 0 +
+                                  </div>
+                                </mat-list-item>
+                              </mat-list>
+                            </mat-menu>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-9 item-col">
+            <div class="item-col-right">
               <router-outlet></router-outlet>
             </div>
           </div>

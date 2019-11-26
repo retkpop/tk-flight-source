@@ -23,11 +23,12 @@ a {
 }
 .main-page {
   .group-main {
-    margin-left: 0;
-    margin-right: 0;
-    .item-col {
-      padding-left: 0;
-      padding-right: 0;
+    .item-col-left {
+      float: left;
+      width: 450px;
+    }
+    .item-col-right {
+      float: left;
     }
   }
 }

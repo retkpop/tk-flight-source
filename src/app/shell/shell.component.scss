@@ -121,5 +121,17 @@
         }
       }
     }
+    .passengers {
+      .input-field {
+        padding-left: 0;
+      }
+    }
+    .btn-search {
+      margin: 15px 0;
+      text-align: center;
+      .submit {
+        width: 160px;
+      }
+    }
   }
 }

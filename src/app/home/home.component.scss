@@ -1,0 +1,48 @@
+.homePage {
+  .slideshow {
+    overflow: hidden;
+    width: 100% !important;
+    position: relative;
+    .slideshow-label-container {
+      z-index: 1;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+      top: 25vh;
+      .text-label > h1 {
+        margin: 0;
+        > span {
+          color: #fff;
+          font-size: 42px;
+          background-color: rgba(0, 0, 0, 0.3);
+          padding: 5px 15px;
+          line-height: 59px;
+        }
+      }
+    }
+    .slider-flight-top {
+      position: absolute;
+      bottom: 160px;
+      width: 100%;
+      .lowest-fares-summary-block {
+        display: inline-block;
+        width: 80%;
+        margin: 10px 30px;
+        padding: 10px;
+        color: #fff;
+        border-radius: 10px;
+        font-weight: 600;
+        background: rgba(0, 0, 0, 0.5);
+        background-image: url("~src/assets/images/plane-white.png");
+        background-repeat: no-repeat;
+        text-align: center;
+        background-position: 10% 70%;
+        .lowest-fares-summary-price {
+          font-size: 170%;
+        }
+      }
+    }
+  }
+}

@@ -29,6 +29,13 @@ a {
     }
     .item-col-right {
       float: left;
+      width: calc(100% - 450px);
     }
   }
+  .mat-form-field {
+    max-width: 100%;
+  }
+}
+.full-width {
+  width: 100%;
 }

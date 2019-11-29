@@ -1,3 +1,35 @@
-<div style="z-index:0;">
-  <img imageid="1627" src="assets/images/banner.jpg" rel="destination" class="img-fluid" />
+<div class="homePage">
+  <div class="slider-home slideshow">
+    <div style="z-index:0;">
+      <img imageid="1627" src="assets/images/banner.jpg" rel="destination" class="img-fluid" />
+    </div>
+    <div class="slideshow-label-container">
+      <div class="text-label" style="">
+        <h1><span>Book your flight</span></h1>
+        <h1>
+          <span class="destination-cityLabel-container">
+            at the best price to <span class="destination-cityLabel">Bergen</span>
+          </span>
+        </h1>
+      </div>
+    </div>
+    <div class="slider-flight-top">
+      <owl-carousel
+        [options]="{ items: 3, dots: false, navigation: false }"
+        [items]="images"
+        [carouselClasses]="['owl-theme', 'sliding']"
+      >
+        <div class="item" *ngFor="let image of images; let i = index">
+          <div class="lowest-fares-summary-block" data-ember-action="" data-ember-action-146="146">
+            <div class="lowest-fares-summary-destinations">
+              Flight R/T Paris - Berlin
+            </div>
+            <div class="lowest-fares-summary-price">
+              <span class="integer_part">€66</span>
+            </div>
+          </div>
+        </div>
+      </owl-carousel>
+    </div>
+  </div>
 </div>

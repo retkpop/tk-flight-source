@@ -159,8 +159,13 @@
                       <div class="col-sm-6">
                         <div class="form-group">
                           <div class="passengers">
-                            <mat-form-field class="input-field">
-                              <input matInput [matMenuTriggerFor]="Passengers" placeholder="Passengers" />
+                            <mat-form-field class="input-field full-width" fxFill>
+                              <input
+                                matInput
+                                [matMenuTriggerFor]="Passengers"
+                                placeholder="Passengers"
+                                class="full-width"
+                              />
                             </mat-form-field>
                             <mat-menu #Passengers="matMenu" xPosition="before">
                               <mat-list>
@@ -195,8 +200,23 @@
                             </mat-menu>
                           </div>
                         </div>
+                        <div class="form-group">
+                          <div class="cabinClass">
+                            <mat-form-field>
+                              <mat-select>
+                                <mat-option value="primary">Economy</mat-option>
+                                <mat-option value="accent">Business</mat-option>
+                                <mat-option value="warn">First</mat-option>
+                                <mat-option value="warn">Premium economy</mat-option>
+                              </mat-select>
+                            </mat-form-field>
+                          </div>
+                        </div>
                       </div>
                     </div>
+                  </div>
+                  <div class="btn-search">
+                    <button mat-raised-button color="primary" class="submit">Search</button>
                   </div>
                 </div>
               </div>

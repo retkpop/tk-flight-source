@@ -1,0 +1,88 @@
+{
+  "configVersion": 1,
+  "timestamp": 1575278095883,
+  "index": "/home/tamkieu/TamKieu/deploy/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/home/tamkieu/TamKieu/deploy/3-es5.ae17e1e8e2419f9194d9.js",
+        "/home/tamkieu/TamKieu/deploy/4-es2015.6b3c694710366b7d9896.js",
+        "/home/tamkieu/TamKieu/deploy/favicon.ico",
+        "/home/tamkieu/TamKieu/deploy/index.html",
+        "/home/tamkieu/TamKieu/deploy/main-es2015.946f9e031a20c95b489a.js",
+        "/home/tamkieu/TamKieu/deploy/main-es5.5a7f5b5a91f3c7455e42.js",
+        "/home/tamkieu/TamKieu/deploy/manifest.json",
+        "/home/tamkieu/TamKieu/deploy/polyfills-es2015.3a5912fab8c77316ecf4.js",
+        "/home/tamkieu/TamKieu/deploy/polyfills-es5.6f55275bcaafee4ab683.js",
+        "/home/tamkieu/TamKieu/deploy/runtime-es2015.6d0c504c8d0240dc6f79.js",
+        "/home/tamkieu/TamKieu/deploy/runtime-es5.ada0319d70ad45ec1644.js",
+        "/home/tamkieu/TamKieu/deploy/scripts.79b543874647567c3516.js",
+        "/home/tamkieu/TamKieu/deploy/styles.bb81f9f9ce5a32316edd.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/home/tamkieu/TamKieu/deploy/MaterialIcons-Regular.0509ab09c1b0d2200a41.woff2",
+        "/home/tamkieu/TamKieu/deploy/MaterialIcons-Regular.29b882f018fa6fe75fd3.woff",
+        "/home/tamkieu/TamKieu/deploy/MaterialIcons-Regular.96c476804d7a788cc1c0.eot",
+        "/home/tamkieu/TamKieu/deploy/MaterialIcons-Regular.da4ea5cdfca6b3baab28.ttf",
+        "/home/tamkieu/TamKieu/deploy/assets/images/banner.jpg",
+        "/home/tamkieu/TamKieu/deploy/assets/images/logo-jaribu.png",
+        "/home/tamkieu/TamKieu/deploy/assets/images/plane-white.png",
+        "/home/tamkieu/TamKieu/deploy/assets/ngx-rocket-logo.png",
+        "/home/tamkieu/TamKieu/deploy/assets/ngx-rocket-logo@192.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/home/tamkieu/TamKieu/deploy/3-es5.ae17e1e8e2419f9194d9.js": "0e332506adf47202d20b3facb2f081d7201e542e",
+    "/home/tamkieu/TamKieu/deploy/4-es2015.6b3c694710366b7d9896.js": "13136ba74a5a686e32b88c3e54f948e52c308ff4",
+    "/home/tamkieu/TamKieu/deploy/MaterialIcons-Regular.0509ab09c1b0d2200a41.woff2": "308ee3580a4a34bd230025d460762d53b5344efc",
+    "/home/tamkieu/TamKieu/deploy/MaterialIcons-Regular.29b882f018fa6fe75fd3.woff": "951adc0458f2ead8495da26886b1f1284a716eaa",
+    "/home/tamkieu/TamKieu/deploy/MaterialIcons-Regular.96c476804d7a788cc1c0.eot": "b28698262d8d8766c7c1bede47059ebea19a90a0",
+    "/home/tamkieu/TamKieu/deploy/MaterialIcons-Regular.da4ea5cdfca6b3baab28.ttf": "b2091f9964be16d1065d5afee6d0b258fe29a5ac",
+    "/home/tamkieu/TamKieu/deploy/assets/images/banner.jpg": "07079d8c5779bf3f6b7076fc2b2b2c65275b886e",
+    "/home/tamkieu/TamKieu/deploy/assets/images/logo-jaribu.png": "38ecd8fc7fd16a5d83400ba30865ad118286ca63",
+    "/home/tamkieu/TamKieu/deploy/assets/images/plane-white.png": "504996cd107a3a6528cf546493605b21948a66d3",
+    "/home/tamkieu/TamKieu/deploy/assets/ngx-rocket-logo.png": "0ac53fd27406fe5a36e68285315fb0012e54058e",
+    "/home/tamkieu/TamKieu/deploy/assets/ngx-rocket-logo@192.png": "461b730f9c6dc818f8af9acbe62dfde24dc02d7a",
+    "/home/tamkieu/TamKieu/deploy/favicon.ico": "b65083d46bbf63692d5d2cdd69622e6d7ecae317",
+    "/home/tamkieu/TamKieu/deploy/index.html": "4ab9cb4ac833948e09107cf23b3608341e907870",
+    "/home/tamkieu/TamKieu/deploy/main-es2015.946f9e031a20c95b489a.js": "c0f4689db5169b72ded98941a33259daa7b9292a",
+    "/home/tamkieu/TamKieu/deploy/main-es5.5a7f5b5a91f3c7455e42.js": "bbf9971bd1801e8063a72cf10352f124a897afeb",
+    "/home/tamkieu/TamKieu/deploy/manifest.json": "2098cad92d004ca20808bb7d486d9867b596f27e",
+    "/home/tamkieu/TamKieu/deploy/polyfills-es2015.3a5912fab8c77316ecf4.js": "ffe5f8cfa6eae51a7a95e8363b303b0c44ade852",
+    "/home/tamkieu/TamKieu/deploy/polyfills-es5.6f55275bcaafee4ab683.js": "3ea1e29746459f5b3ea1cf720189326d06127910",
+    "/home/tamkieu/TamKieu/deploy/runtime-es2015.6d0c504c8d0240dc6f79.js": "bd04ba3200fbbfb800ed977a16d612856758b756",
+    "/home/tamkieu/TamKieu/deploy/runtime-es5.ada0319d70ad45ec1644.js": "10e933519cd7fb2a4dcde6491f87fca8ecb03c6a",
+    "/home/tamkieu/TamKieu/deploy/scripts.79b543874647567c3516.js": "39125143d525ac4c5cf76a20b10014d5300f4196",
+    "/home/tamkieu/TamKieu/deploy/styles.bb81f9f9ce5a32316edd.css": "e15ca1b546131648df2bbf8553c96d833b402021"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
